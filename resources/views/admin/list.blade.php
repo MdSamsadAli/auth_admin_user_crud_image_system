@@ -24,7 +24,7 @@
             <tr>
                 <td>{{ $item->fullName }}</td>
                 <td>{{ $item->email }}</td>
-                <td>{{ $item->role }}</td>
+                <td>{{ $item->role == '0' ? 'User':'Admin' }}</td>
                 <td>
                     <a href="{{ route('admin.useredit', $item->id) }}" class="btn btn-secondary">Edit</a>
                     <a href="{{ route('admin.userdelete', $item->id) }}" class="btn btn-danger">Trash</a>
