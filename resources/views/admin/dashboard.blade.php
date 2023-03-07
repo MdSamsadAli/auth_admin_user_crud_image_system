@@ -39,7 +39,7 @@
                 <td>
                     <a href="{{ route('admin.edit', $item->id) }}" class="btn btn-secondary">Edit</a>
                     <a href="" class="btn btn-info">View</a>
-                    <a href="{{ route('admin.destroy', $item->id) }}" class="btn btn-danger">Delete</a>
+                    <a href="{{ route('admin.destroy', $item->id) }}" class="btn btn-danger"> <i class="fa fa-trash"></i>  Delete</a>
                 </td>
             </tr>
             @endforeach
