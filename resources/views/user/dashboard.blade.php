@@ -6,6 +6,7 @@
             @if (auth()->check())
             <div class="mt-4">
                 <h4>{{ auth()->user()->fullName }}</h4>
+
             </div>
             <a href="{{ route('auth.logout') }}" class="btn btn-primary">Logout</a>
             @endif
